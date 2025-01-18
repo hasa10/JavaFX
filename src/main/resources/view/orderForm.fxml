@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.order.OrderFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#27ae60" height="66.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label layoutX="181.0" layoutY="4.0" prefHeight="56.0" prefWidth="238.0" text="Order Form">
+         <font>
+            <Font name="Century" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="79.0" prefHeight="18.0" prefWidth="34.0" text="Date :" />
+      <Label layoutX="133.0" layoutY="79.0" prefHeight="18.0" prefWidth="34.0" text="Time :" />
+      <JFXTextField fx:id="txtAddress" editable="false" layoutX="197.0" layoutY="124.0" prefHeight="26.0" prefWidth="142.0" promptText="Address" />
+      <JFXTextField fx:id="txtSalary" editable="false" layoutX="354.0" layoutY="124.0" prefHeight="26.0" prefWidth="106.0" promptText="Salary" />
+      <JFXTextField fx:id="txtDesc" editable="false" layoutX="195.0" layoutY="174.0" prefHeight="26.0" prefWidth="105.0" promptText="desc" />
+      <JFXTextField fx:id="txtStock" editable="false" layoutX="321.0" layoutY="174.0" prefHeight="26.0" prefWidth="106.0" promptText="Stock" />
+      <JFXTextField fx:id="txtUnitPrice" editable="false" layoutX="439.0" layoutY="173.0" prefHeight="26.0" prefWidth="58.0" promptText="Unit Price" />
+      <JFXComboBox fx:id="ComboBoxCustomerID" layoutX="38.0" layoutY="124.0" prefHeight="26.0" prefWidth="142.0" promptText="Customer ID" />
+      <JFXComboBox fx:id="comboBoxItemCode" layoutX="38.0" layoutY="174.0" prefHeight="26.0" prefWidth="142.0" promptText="Item Code" />
+      <JFXButton layoutX="442.0" layoutY="227.0" onAction="#btnOrderOnAction" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: #27ae60;" text="Add to Cart" textFill="WHITE" />
+      <Label fx:id="lblDate" layoutX="47.0" layoutY="80.0" prefHeight="18.0" prefWidth="58.0" />
+      <Label fx:id="lblTime" layoutX="180.0" layoutY="79.0" prefHeight="18.0" prefWidth="58.0" />
+      <JFXTextField fx:id="txtName" editable="false" layoutX="468.0" layoutY="124.0" prefHeight="26.0" prefWidth="106.0" promptText="Name" />
+      <TableView fx:id="tblOrders" layoutX="1.0" layoutY="277.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="code" />
+          <TableColumn fx:id="colDescription" prefWidth="107.199951171875" text="desc" />
+            <TableColumn fx:id="colQTyOnHand" prefWidth="148.80003356933594" text="qty on hand" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="119.199951171875" text="unit price" />
+            <TableColumn fx:id="colTotal" prefWidth="152.00006103515625" text="Total" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="474.0" layoutY="503.0" onAction="#btnOrderOnAction" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: #27ae60;" text="Order" />
+      <JFXTextField fx:id="txtQty" layoutX="341.0" layoutY="228.0" prefHeight="26.0" prefWidth="94.0" promptText="Qty" />
+   </children>
+</AnchorPane>
