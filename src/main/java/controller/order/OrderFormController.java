@@ -43,6 +43,8 @@ public class OrderFormController implements Initializable {
     public TableColumn colQTyOnHand;
     public TableColumn colUnitPrice;
     public TableColumn colTotal;
+    public JFXTextField txtorderID;
+    public JFXTextField txtQty;
 
 
     @FXML

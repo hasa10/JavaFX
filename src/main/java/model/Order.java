@@ -6,14 +6,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Order {
-    private String itemCode;
-    private String desc;
-    private Integer qty;
-    private Double unitPrice;
-    private Double total;
+    private String id;
+    private LocalDate date;
+    private String customerId;
+    private List<OrderDetail> orderDetails;
 }

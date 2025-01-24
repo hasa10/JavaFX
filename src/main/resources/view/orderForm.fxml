@@ -42,5 +42,6 @@
       </TableView>
       <JFXButton layoutX="474.0" layoutY="503.0" onAction="#btnOrderOnAction" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: #27ae60;" text="Order" />
       <JFXTextField fx:id="txtQty" layoutX="341.0" layoutY="228.0" prefHeight="26.0" prefWidth="94.0" promptText="Qty" />
+      <JFXTextField fx:id="txtorderID" layoutX="488.0" layoutY="84.0" prefHeight="26.0" prefWidth="94.0" promptText="Order ID" />
    </children>
 </AnchorPane>
